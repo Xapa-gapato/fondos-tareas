@@ -1,0 +1,62 @@
+:root {
+    --color-fondo: #A8E6FF;
+    --color-principal: #00184D;
+    --color-tercero: #E5FFE9;
+    --color-seccion1: aquamarine;
+    --color-seccion2: rgb(121, 253, 121);
+    --color-seccion3: #229af6;
+    --transparente: rgba(0, 0, 0, 0.5)
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: var(--color-fondo);
+}
+
+section {
+
+    width: clamp(120px, 80%, 90%);
+    height: 400px;
+    padding: 1em;
+    border: 2px solid;
+    
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: auto;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+
+}
+
+.section1 {
+    background-image: linear-gradient(var(--color-seccion1), var(--transparente)), url(img/sonic1.jpg);
+}
+
+.section2 {
+    background-image: linear-gradient(var(--color-seccion2), var(--transparente)), url(img/sonic2.jpg);
+}
+
+.section3 {
+    background-image: linear-gradient(var(--color-seccion3), var(--transparente)), url(img/sonic3.jpg);
+}
+
+.boton1 {
+   background-image: linear-gradient(var(--color-seccion1), var(--transparente)); 
+}
+
+.boton2 {
+    background-image: linear-gradient(var(--color-seccion2), var(--transparente));
+}
+
+.boton3 {
+    background-image: linear-gradient(var(--color-seccion3), var(--transparente));
+}
